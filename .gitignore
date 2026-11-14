@@ -1,0 +1,14 @@
+# Tool and agent files: never published
+.claude/
+.impeccable/
+
+# Source material and private working notes kept out of the site
+PRODUCT.md
+*.ipynb
+pic.jpg
+sudharsan_ML_resume.pdf
+primordia/
+
+# OS noise
+Thumbs.db
+.DS_Store

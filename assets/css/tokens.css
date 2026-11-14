@@ -1,0 +1,76 @@
+/* Design tokens. Every component in site.css reads from these and nothing else. */
+
+@font-face{font-family:"Playfair Display";font-style:italic;font-weight:600;font-display:swap;src:url("../fonts/playfair-display-latin-600-italic.woff2") format("woff2")}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:600;font-display:swap;src:url("../fonts/cormorant-garamond-latin-600-italic.woff2") format("woff2")}
+@font-face{font-family:"Newsreader";font-style:normal;font-weight:200 800;font-display:swap;src:url("../fonts/newsreader-latin-opsz-normal.woff2") format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:500;font-display:swap;src:url("../fonts/jetbrains-mono-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:700;font-display:swap;src:url("../fonts/jetbrains-mono-latin-700-normal.woff2") format("woff2")}
+
+:root{
+  /* ---- colour: black, navy, silver, gold. Nothing else. ---- */
+  --black:#0A0B0D;
+  --black-deep:#050506;
+  --black-lift:#16181D;
+  --navy:#0E1C36;
+  --navy-deep:#0A1428;
+  --navy-glow:#1E3561;
+  --silver:#C8CCD2;          /* silver as text */
+  --silver-lo:#A3A9B1;       /* silver surface, darkest stop */
+  --silver-mid:#B4BAC1;
+  --silver-hi:#DDE0E4;       /* silver surface, highlight band */
+  --gold:#E8C766;            /* solid gold: text, links, small marks */
+  --rule-on-dark:rgba(200,204,210,.22);
+  --rule-on-silver:rgba(10,11,13,.22);
+  --shadow:rgba(5,5,6,.5);
+
+  /* ---- metals (name, resume button, lead metric, photo frame only) ---- */
+  --gold-metal:linear-gradient(100deg,#C99F3A 0%,#E3BC4E 18%,#FBE7A6 34%,#E8C766 48%,#C99F3A 62%,#F2D06B 80%,#E3BC4E 100%);
+  --gold-glints:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g' x='0' y='0' width='1' height='1'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.4' numOctaves='1' seed='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.98 0 0 0 0 0.91 0 0 0 0 0.65 0 0 0 8 -5.2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  --glint-size:160px 160px;
+
+  /* ---- surfaces ---- */
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='600'%3E%3Cfilter id='a' x='0' y='0' width='1' height='1'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.006 0.8' numOctaves='2' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.87 0 0 0 0 0.88 0 0 0 0 0.89 0.55 0 0 0 -0.2'/%3E%3C/filter%3E%3Cfilter id='b' x='0' y='0' width='1' height='1'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.004 0.95' numOctaves='2' seed='11' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.04 0 0 0 0 0.04 0 0 0 0 0.05 0 0.35 0 0 -0.12'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3Crect width='100%25' height='100%25' filter='url(%23b)'/%3E%3C/svg%3E");
+  --fine-grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n' x='0' y='0' width='1' height='1'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' seed='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.78 0 0 0 0 0.8 0 0 0 0 0.82 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --surface-silver:var(--grain),linear-gradient(180deg,var(--silver-hi) 0%,#C3C8CE 26%,var(--silver-mid) 60%,#C3C8CE 86%,var(--silver-lo) 100%);
+  --surface-black:var(--fine-grain),radial-gradient(120% 90% at 20% 10%,var(--black-lift) 0%,var(--black) 55%,var(--black-deep) 100%);
+  --surface-navy:var(--fine-grain),radial-gradient(90% 75% at 70% 0%,var(--navy-glow) 0%,var(--navy) 52%,var(--navy-deep) 100%);
+
+  /* ---- type ---- */
+  --font-name:"Playfair Display",Georgia,serif;
+  --font-head:"Cormorant Garamond",Georgia,serif;
+  --font-body:"Newsreader",Georgia,serif;
+  --font-mono:"JetBrains Mono",ui-monospace,monospace;
+  /* rem so a reader's own default font size scales the whole page */
+  --text-xs:.875rem;
+  --text-sm:1rem;
+  --text-md:1.1875rem;
+  --text-lg:1.3125rem;
+  --head-sm:1.75rem;
+  --head-md:clamp(2.5rem,4.2vw,3.625rem);
+  --head-lg:clamp(2.75rem,5vw,4.25rem);
+  --name-size:clamp(2.75rem,4.4vw,5rem);
+  --name-size-sm:clamp(2.5rem,11vw,3.5rem);
+  --metric-sm:2.25rem;
+  --metric-pair:clamp(1.625rem,2.4vw,2.25rem);
+  --metric-lg:clamp(5.5rem,11vw,10rem);
+  --leading:1.6;
+  --measure:60ch;
+
+  /* ---- spacing: 4 / 8 / 16 / 24 / 32 / 48 / 64 ---- */
+  --s1:4px; --s2:8px; --s3:16px; --s4:24px; --s5:32px; --s6:48px; --s7:64px;
+
+  /* ---- shape ---- */
+  --radius:8px;
+  --frame:4px;                                   /* photo frame width */
+  --radius-inner:calc(var(--radius) - var(--frame));
+  --tap:44px;
+  --bar-h:56px;               /* sticky bar height */
+  --icon:18px;
+  --wrap:1200px;
+
+  /* ---- motion ---- */
+  --ease-out:cubic-bezier(.22,1,.36,1);
+  --dur-fast:.2s;
+  --dur-bar:.32s;
+  --dur-sweep:12s;
+}

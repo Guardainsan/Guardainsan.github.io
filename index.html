@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sudharsan Durai Sridevi · AI/ML portfolio</title>
+<meta name="description" content="Master of AI student at RMIT in Melbourne. A contract auditor that quotes every finding, a lead scorer with evidence gates, a persuasion classifier, VR creature AI and a RAG chatbot.">
+<meta name="theme-color" content="#0A0B0D">
+<meta property="og:title" content="Sudharsan Durai Sridevi · AI/ML portfolio">
+<meta property="og:description" content="Projects with their numbers and sources: RAG, evaluation, automation and game AI.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://guardainsan.github.io/">
+<meta property="og:image" content="https://guardainsan.github.io/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Photo of Sudharsan Durai Sridevi in a gold frame on navy">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/playfair-display-latin-600-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#flagship">Skip to projects</a>
+
+<div class="topbar" id="topbar" inert>
+  <div class="wrap">
+    <nav aria-label="Sections"><ul><li><a href="#flagship">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+    <a class="resume" href="Sudharsan_Resume.pdf" download><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>Resume</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="hero-navy" aria-hidden="true"></div>
+  <div class="hero-silver" aria-hidden="true"></div>
+  <svg class="hero-geo" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <path id="navyPath" d="M33 0 H100 V78 A74.4 138 0 0 1 33 0 Z"/>
+    <path id="silverPath" d="M0 70 C20 68 36 50 44 30.85 A74.4 138 0 0 0 100 78 V100 H0 Z"/>
+  </svg>
+
+  <div class="photo-wrap">
+    <span class="frame"><img class="photo" src="assets/img/sudharsan.webp" width="480" height="480" alt="Sudharsan Durai Sridevi" data-fallback="Photo of Sudharsan didn't load."></span>
+  </div>
+  <svg class="m-arc a" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C24 6 60 4 100 28 V40 Z"/></svg>
+
+  <div class="hero-main on-navy">
+    <h1 class="glitter">Sudharsan<br>Durai Sridevi</h1>
+    <p class="lede">Master of AI student at RMIT in Melbourne. I build retrieval pipelines, automations and model evaluations, and I keep the failures in the write-up.</p>
+    <div class="actions">
+      <a class="btn glitter-fill" href="Sudharsan_Resume.pdf" download><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>Download resume</a>
+      <div class="links">
+        <a class="ghost" href="https://github.com/Guardainsan"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub</a>
+        <button class="ghost" type="button" data-copy-email aria-describedby="copy-status-hero"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>Copy email</button>
+      </div>
+    </div>
+    <p class="status" id="copy-status-hero" role="status" aria-live="polite"></p>
+  </div>
+  <svg class="m-arc b" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 V24 C30 4 70 4 100 26 V40 Z"/></svg>
+
+  <div class="hero-foot on-silver">
+    <p class="key">Open to AI/ML internships in Melbourne</p>
+    <p>Master of AI at RMIT, finishing July 2027.</p>
+    <div class="row">
+      <ul class="chips black" aria-label="Main skills"><li>Python</li><li>RAG</li><li>Evaluation</li><li>n8n</li><li>PyTorch</li></ul>
+      <a class="tlink" href="#flagship">Start with the contract auditor</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ============ 1. Contract auditor (flagship, navy) ============ -->
+<section class="band navy on-navy proj flag" id="flagship" aria-labelledby="h-auditor">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <h2 id="h-auditor">A contract auditor that won't flag a clause without quoting it</h2>
+        <div class="who"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Solo project</div>
+        <ul class="chips black" aria-label="Built with"><li>Python</li><li>LangChain</li><li>Chroma</li><li>BM25 + embeddings</li><li>Gemini 2.5 Flash</li><li>FastAPI</li></ul>
+        <p>It reads a PDF, HTML or text contract, checks it for 8 risk types, and quotes the exact clause behind each finding with a page reference.</p>
+        <h3>What I built</h3>
+        <p>The whole pipeline: clause-aware chunking, local all-MiniLM-L6-v2 embeddings in Chroma, hybrid semantic and BM25 retrieval, one Gemini call per risk, an evaluation harness with hand-written answer keys, and a FastAPI web app on top.</p>
+        <h3>The decision that mattered</h3>
+        <p>If the model says a risk is there but can't quote the text, the code marks it as not present. In an audit, an invented risk does more damage than a missed one.</p>
+      </div>
+      <figure>
+        <img class="shot d-only" src="assets/img/auditor-report-720.webp" width="720" height="780" loading="lazy" decoding="async" alt="The auditor's web report: scope, executive summary and the first findings, each with its quoted clause" data-fallback="The audit report screenshot didn't load. The same report is in the GitHub repo.">
+        <img class="shot m-only" src="assets/img/auditor-finding.webp" width="964" height="265" loading="lazy" decoding="async" alt="One finding from the report: Limitation of Liability, rated high, with its quoted clause" data-fallback="The finding screenshot didn't load. The same report is in the GitHub repo.">
+        <blockquote class="quote m-only">"IN NO EVENT SHALL PROVIDER'S TOTAL LIABILITY EXCEED THE FEES PAID BY CLIENT IN THE THREE MONTHS PRECEDING THE CLAIM."</blockquote>
+        <figcaption>The local web app auditing test contract 1. <a class="m-only tlink" href="assets/img/auditor-report.webp">Open the full screenshot</a></figcaption>
+      </figure>
+    </div>
+
+    <div class="lead-metric">
+      <div class="big num glitter">95.8%</div>
+      <div>
+        <div class="d">23 of 24 checks correct across 3 hand-labelled test contracts. They were small enough that retrieval returned every chunk, so this measures the model's judgement, not retrieval ranking.</div>
+        <div class="src"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>README.md, Evaluation</div>
+      </div>
+    </div>
+    <div class="panel black ledger">
+      <div><div class="v num">100%</div><div class="d">Recall: all 11 real risks found, none missed</div><div class="src"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>README.md, Evaluation</div></div>
+      <div><div class="v num">91.7%</div><div class="d">Precision: one false positive, most likely an at-will termination clause misread as auto-renewal</div><div class="src"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>README.md, follow-up</div></div>
+      <div><div class="v num">22.8%</div><div class="d">Coverage on a 197-page filing with 152 scanned pages. The report says so instead of passing it.</div><div class="src"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>README.md, Design principles</div></div>
+    </div>
+    <div class="linkrow"><a class="tlink" href="https://github.com/Guardainsan/legal-contract-auditor">Contract auditor on GitHub</a></div>
+  </div>
+</section>
+
+<!-- ============ 2. LeadForge (silver) ============ -->
+<section class="band silver on-silver proj" id="leadforge" aria-labelledby="h-leadforge">
+  <div class="wrap split">
+    <div>
+      <h2 id="h-leadforge">A lead scorer that won't call the model until it has real page text</h2>
+      <div class="who"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Solo project</div>
+      <ul class="chips black" aria-label="Built with"><li>n8n</li><li>Google Sheets</li><li>Gemini structured output</li><li>Docker</li></ul>
+      <p>An n8n workflow that reads leads from a Google Sheet, fetches each company's website, has Gemini score the company against an ideal-customer profile, and writes the result back to the sheet.</p>
+      <h3>The decision that mattered</h3>
+      <p>Four checks run before any token is spent: no company name, no website, a failed fetch, or under 250 characters of clean text. A page can return HTTP 200 and still be an empty JavaScript shell, so the last check counts the text instead of trusting the status code.</p>
+      <h3>Stripping the HTML first</h3>
+      <div class="measure-row"><span class="num">2.6 MB</span><span>of Atlassian homepage HTML became</span><span class="num">4.4 KB</span><span>of text for the prompt</span></div>
+      <div class="src"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>README.md, sample lead list</div>
+      <div class="linkrow"><a class="tlink" href="https://github.com/Guardainsan/Lead-Forge">LeadForge on GitHub</a></div>
+    </div>
+    <div>
+      <div class="panel black">
+        <table>
+          <caption>All 8 leads from real run 2, scored against an AI-consultancy profile · results/real-run-2.csv</caption>
+          <thead><tr><th scope="col">Company</th><th scope="col" class="num-col">Fit score /10</th></tr></thead>
+          <tbody>
+            <tr><td>Direct Couriers</td><td class="s num">9</td></tr>
+            <tr><td>SecureCash</td><td class="s num">9</td></tr>
+            <tr><td>Northline</td><td class="s num">8</td></tr>
+            <tr><td>Little Real Estate</td><td class="s num">5</td></tr>
+            <tr><td>Beveridge Williams</td><td class="s num">5</td></tr>
+            <tr><td>Programmed Maintenance</td><td class="s num">2</td></tr>
+            <tr><td>Alsco Linen</td><td class="s num">2</td></tr>
+            <tr><td>Ronstan</td><td class="r">Site couldn't be fetched, sent to manual review</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="slot">
+        <p class="fallback">Demo video coming soon. Until then, the workflow file and both real runs are in the repo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. Persuasion techniques in memes (black) ============ -->
+<section class="band black on-black proj" id="memes" aria-labelledby="h-memes">
+  <div class="wrap">
+    <h2 id="h-memes">A classifier for 20 persuasion techniques in meme text, misses included</h2>
+    <div class="who"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>RMIT coursework, solo</div>
+    <ul class="chips navy" aria-label="Built with"><li>PyTorch</li><li>Hugging Face Transformers</li><li>DistilBERT</li><li>scikit-learn</li></ul>
+    <div class="split">
+      <div>
+        <p>The model reads the text of a meme and predicts which of 20 persuasion techniques it uses. A second head marks where in the text each one appears.</p>
+        <h3>The decision that mattered</h3>
+        <p>Each technique gets its own sigmoid output and its own threshold, tuned on the dev set, because one meme can use several techniques at once. Before training I removed a record that appeared in both the training and test files.</p>
+      </div>
+      <div>
+        <h3 class="flush-top">What it got wrong</h3>
+        <p>On the full 200-text test set, macro-F1 is 0.16. The model over-predicts: it tagged Exaggeration/Minimisation on every test text. Six techniques have three or fewer test examples, so their scores swing on a single hit.</p>
+      </div>
+    </div>
+    <div class="stats">
+      <div><div class="v num">0.27 vs 0.21</div><div class="d">Dev macro-F1, full fine-tuning vs a frozen encoder</div><div class="src"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>Coursework notebook, section 8</div></div>
+      <div><div class="v num">0.13 vs 0.05</div><div class="d">Macro-F1 against zero-shot Qwen2.5-1.5B on the same 60 test examples</div><div class="src"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>Coursework notebook, section 13</div></div>
+      <div><div class="v num">950</div><div class="d">Texts: 687 train, 63 dev, 200 test</div><div class="src"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>Coursework notebook, section 2</div></div>
+      <div><div class="v num">8.4 ms</div><div class="d">p95 latency per text on a Tesla T4</div><div class="src"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>Coursework notebook, section 16</div></div>
+    </div>
+    <div class="charts">
+      <figure class="panel navy"><a href="assets/img/meme-label-frequency.webp" aria-label="Open the label-frequency chart full size"><img src="assets/img/meme-label-frequency.webp" width="990" height="690" loading="lazy" decoding="async" alt="Bar chart of how many training examples contain each technique. Loaded Language has about 360, while the rarest techniques have fewer than 10." data-fallback="The label-frequency chart didn't load."></a><figcaption>Training labels are heavily imbalanced, which is why each technique gets its own threshold.</figcaption></figure>
+      <figure class="panel navy"><a href="assets/img/meme-zero-shot.webp" aria-label="Open the zero-shot comparison chart full size"><img src="assets/img/meme-zero-shot.webp" width="690" height="362" loading="lazy" decoding="async" alt="Bar chart: the trained model scores about 0.13 macro-F1 and the zero-shot model about 0.05 on the same test subset." data-fallback="The zero-shot comparison chart didn't load."></a><figcaption>Trained model vs zero-shot Qwen2.5-1.5B on the same 60 test examples. 20 of the zero-shot model's 60 answers were invalid and counted as empty.</figcaption></figure>
+    </div>
+    <p class="note">Coursework for RMIT COSC2779 Deep Learning. The notebook isn't public; I can share it on request.</p>
+  </div>
+</section>
+
+<!-- ============ 4. Primordia (silver) ============ -->
+<section class="band silver on-silver proj" id="primordia" aria-labelledby="h-primordia">
+  <div class="wrap">
+    <h2 id="h-primordia">Dinosaurs that wander, hunt and flee in VR</h2>
+    <div class="who"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Team project, 6 people · I'm the primary developer of the creature AI</div>
+    <ul class="chips black" aria-label="Built with"><li>Unity 6</li><li>C#</li><li>NavMesh</li><li>OpenXR</li><li>Meta Quest 3</li></ul>
+    <div class="videos">
+      <figure>
+        <div class="video" data-autoplay>
+          <video preload="none" muted playsinline data-poster="assets/video/primordia-demo-2-poster.webp" width="1280" height="544" aria-label="Gameplay: dinosaurs moving across the island in the Quest 3 build"><source src="assets/video/primordia-demo-2.mp4" type="video/mp4"></video>
+          <p class="video-msg">The video didn't load. Refresh the page to try again, or see the project on GitHub.</p>
+          <button class="play" type="button" aria-label="Play gameplay video"><svg class="i" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg></button>
+        </div>
+        <figcaption>Team footage from the Quest 3 build, no sound. My part is how the dinosaurs behave.</figcaption>
+      </figure>
+      <figure>
+        <div class="video small">
+          <video preload="none" muted playsinline data-poster="assets/video/primordia-demo-1-poster.webp" width="848" height="464" aria-label="Gameplay: the weapon shop and weapons in the Quest 3 build"><source src="assets/video/primordia-demo-1.mp4" type="video/mp4"></video>
+          <p class="video-msg">The video didn't load. Refresh the page to try again.</p>
+          <button class="play" type="button" aria-label="Play weapon shop video"><svg class="i" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg></button>
+        </div>
+        <figcaption>The weapon shop, built by teammates.</figcaption>
+      </figure>
+    </div>
+    <div>
+      <div>
+        <p>A first-person VR dinosaur-hunting survival game for the Meta Quest 3, built in Unity 6 by six Master's students.</p>
+        <h3>What I built</h3>
+        <p>I was the primary developer of the creature AI, and I wrote the 33-page specification the team built from.</p>
+        <h3>The decision that mattered</h3>
+        <p>All 6 species run one shared state machine. What makes a raptor different from a herbivore lives in its data profile, not in separate code, and a manager keeps at most 12 creatures active at once.</p>
+        <div class="linkrow"><a class="tlink" href="https://github.com/MAvRK7/Primordia/tree/san-dino-ai">Primordia on GitHub (san-dino-ai branch)</a></div>
+      </div>
+    </div>
+    <figure class="panel black fsm">
+      <p class="hint">Scroll sideways to see the whole diagram.</p>
+      <div class="fsm-scroll" tabindex="0" role="region" aria-label="State machine diagram">
+      <svg viewBox="0 0 900 300" role="img" aria-labelledby="fsm-t fsm-d">
+        <title id="fsm-t">The five states every species shares</title>
+        <desc id="fsm-d">Wander goes to Investigate on hearing a noise and back on reaching the spot. Wander goes to Chase on sensing a target; Chase goes to Attack in range and back to Chase beyond 1.25 times the range. Chase or Attack return to Wander when the target is lost, dead or past the leash. Prey species go from Wander to Flee when threatened and back when the threat is gone.</desc>
+        <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="arrow" d="M0 0 L10 5 L0 10 Z"/></marker></defs>
+        <path class="edge" d="M180 124 L300 60" marker-end="url(#arr)"/><text class="lbl" x="160" y="84">hears a noise</text>
+        <path class="edge" d="M310 76 L210 128" marker-end="url(#arr)"/><text class="lbl" x="276" y="102">reaches the spot</text>
+        <path class="edge" d="M210 142 L420 142" marker-end="url(#arr)"/><text class="lbl" x="300" y="134">senses a target</text>
+        <path class="edge" d="M420 162 L210 162" marker-end="url(#arr)"/><text class="lbl" x="226" y="184">lost, dead or past leash</text>
+        <path class="edge" d="M570 142 L700 142" marker-end="url(#arr)"/><text class="lbl" x="596" y="136">in range</text>
+        <path class="edge" d="M700 162 L570 162" marker-end="url(#arr)"/><text class="lbl" x="574" y="184">past 1.25× range</text>
+        <path class="edge" d="M150 176 L300 240" marker-end="url(#arr)"/><text class="lbl" x="92" y="232">prey, threatened</text>
+        <path class="edge" d="M300 262 L130 180" marker-end="url(#arr)"/><text class="lbl" x="168" y="276">threat gone</text>
+        <g class="node"><rect x="60" y="124" width="150" height="52" rx="8"/><text x="135" y="155" text-anchor="middle">Wander</text></g>
+        <g class="node"><rect x="300" y="24" width="150" height="52" rx="8"/><text x="375" y="55" text-anchor="middle">Investigate</text></g>
+        <g class="node"><rect x="420" y="124" width="150" height="52" rx="8"/><text x="495" y="155" text-anchor="middle">Chase</text></g>
+        <g class="node"><rect x="700" y="124" width="150" height="52" rx="8"/><text x="775" y="155" text-anchor="middle">Attack</text></g>
+        <g class="node"><rect x="300" y="224" width="150" height="52" rx="8"/><text x="375" y="255" text-anchor="middle">Flee</text></g>
+      </svg>
+      </div>
+      <figcaption>The five states and the transitions between them, read from DinoAI.cs.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 5. Healthify (black) ============ -->
+<section class="band black on-black proj" id="healthify" aria-labelledby="h-healthify">
+  <div class="wrap split">
+    <div>
+      <h2 id="h-healthify">A mental-health chatbot that answers from a curated health PDF</h2>
+      <div class="who"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Team project, 3 people</div>
+      <ul class="chips navy" aria-label="Built with"><li>React</li><li>Vite</li><li>Tailwind CSS</li><li>Express.js</li><li>RAG</li></ul>
+      <p>A web chatbot for emotional wellbeing. It retrieves its answers from a curated health PDF, so it stays inside material the team chose.</p>
+      <h3>What we built</h3>
+      <p>A React front end on Vercel and an Express API on Render. The bot replies in English, Tanglish or Hinglish to match the user, suggests relaxation activities when a message reads as negative, and takes voice input.</p>
+      <div class="linkrow"><a class="tlink" href="https://healthify-bot-rag.vercel.app">Open the live app</a><a class="tlink" href="https://github.com/Guardainsan/Healthify">Healthify on GitHub</a></div>
+    </div>
+    <figure>
+      <img class="shot" src="assets/img/healthify-chat-960.webp" srcset="assets/img/healthify-chat-960.webp 960w, assets/img/healthify-chat.webp 1536w" sizes="(max-width:980px) 100vw, 560px" width="960" height="384" loading="lazy" decoding="async" alt="Healthify's chat screen with four suggested starter questions and a message box with voice input" data-fallback="The Healthify screenshot didn't load. The live app is linked on the left.">
+      <figcaption>The live chat page at healthify-bot-rag.vercel.app.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ Skills (silver) ============ -->
+<section class="band silver on-silver sec" id="skills" aria-labelledby="h-skills">
+  <div class="wrap">
+    <h2 id="h-skills">Skills</h2>
+    <dl class="skill-groups">
+      <div><dt>Languages</dt><dd><ul class="chips black"><li>Python</li><li>SQL</li><li>JavaScript</li><li>C#</li></ul></dd></div>
+      <div><dt>ML / DL</dt><dd><ul class="chips black"><li>PyTorch</li><li>Hugging Face Transformers</li><li>scikit-learn</li><li>pandas</li><li>NumPy</li><li>Matplotlib</li><li>Fine-tuning</li><li>NLP</li></ul></dd></div>
+      <div><dt>RAG / LLM</dt><dd><ul class="chips black"><li>RAG</li><li>LangChain</li><li>Chroma</li><li>Sentence-transformers embeddings</li><li>Hybrid BM25 retrieval</li><li>AI agents</li><li>Tool calling</li><li>Prompt engineering</li><li>LLM evaluation</li><li>Gemini</li><li>Groq</li></ul></dd></div>
+      <div><dt>Automation</dt><dd><ul class="chips black"><li>n8n</li><li>Google Sheets</li><li>Structured LLM output</li></ul></dd></div>
+      <div><dt>Tools</dt><dd><ul class="chips black"><li>FastAPI</li><li>Node.js</li><li>Express.js</li><li>React</li><li>Docker</li><li>Git</li><li>Streamlit</li><li>Figma</li><li>Unity 6</li><li>OpenXR</li></ul></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ Experience (black) ============ -->
+<section class="band black on-black sec" id="experience" aria-labelledby="h-exp">
+  <div class="wrap">
+    <h2 id="h-exp">Experience</h2>
+    <ol class="timeline">
+      <li>
+        <div class="when">Jun to Jul 2024<br>Coimbatore, hybrid</div>
+        <div>
+          <h3>Machine Learning Intern</h3>
+          <p class="org">Techvolt</p>
+          <p>Built a heart disease prediction model in Python with NumPy, pandas and scikit-learn. I ran the whole workflow myself, from loading and preparing the patient data to training and scoring the model. It reached 83% accuracy at flagging at-risk patients.</p>
+          <div class="src"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>LinkedIn, Experience</div>
+          <ul class="chips navy" aria-label="Tools"><li>Python</li><li>NumPy</li><li>pandas</li><li>scikit-learn</li></ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">Feb to Mar 2024<br>Remote</div>
+        <div>
+          <h3>Machine Learning Intern</h3>
+          <p class="org">InternPe</p>
+          <p>Built a car price predictor from a company dataset where every field arrived as text. I encoded the fields as integers and binary flags, scaled them with StandardScaler, and compared Linear Regression with a Random Forest on R²; the final model reached an R² of 0.88. I also built a diabetes classifier with an SVM that reached 75.97% accuracy, with a working demo.</p>
+          <div class="src"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>LinkedIn, Experience</div>
+          <ul class="chips navy" aria-label="Tools"><li>Python</li><li>scikit-learn</li><li>SVM</li><li>Random Forest</li></ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">Jul to Aug 2023<br>Hybrid</div>
+        <div>
+          <h3>AIML Intern</h3>
+          <p class="org">Ascentz Technologies</p>
+          <p>Ran an election poll and built my own dataset from 100 respondents instead of using a ready-made one. I trained Logistic Regression and a Decision Tree on the same responses; the Decision Tree did better, with an F1 score of 0.79.</p>
+          <div class="src"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>LinkedIn, Experience</div>
+          <ul class="chips navy" aria-label="Methods"><li>Logistic Regression</li><li>Decision Tree</li></ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ Education (silver) ============ -->
+<section class="band silver on-silver sec" id="education" aria-labelledby="h-edu">
+  <div class="wrap">
+    <h2 id="h-edu">Education</h2>
+    <div class="edu">
+      <div class="panel black"><h3>Master of Artificial Intelligence</h3><p>RMIT University, Melbourne</p><p>Expected July 2027</p></div>
+      <div class="panel black"><h3>B.Tech in Artificial Intelligence and Machine Learning</h3><p>SNS College of Technology, Coimbatore</p><p>2025 · GPA 8.73 / 10</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Contact (navy) ============ -->
+<section class="band navy on-navy sec contact" id="contact" aria-labelledby="h-contact">
+  <div class="wrap">
+    <h2 id="h-contact">Hiring an AI/ML intern in Melbourne?</h2>
+    <p>I'm on a student visa (subclass 500), so I can work 48 hours a fortnight during semester and full-time in the breaks. Email is the quickest way to reach me.</p>
+    <div class="actions">
+      <a class="btn glitter-fill" href="Sudharsan_Resume.pdf" download><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>Download resume</a>
+    <div class="links">
+      <button class="ghost" type="button" data-copy-email aria-describedby="copy-status-contact"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>Copy email</button>
+      <a class="ghost" href="https://www.linkedin.com/in/sudharsan-ds"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a>
+      <a class="ghost" href="https://github.com/Guardainsan"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub</a>
+    </div>
+    </div>
+    <p class="status" id="copy-status-contact" role="status" aria-live="polite"></p>
+  </div>
+</section>
+</main>
+
+<footer class="on-black">
+  <div class="wrap"><p>Sudharsan Durai Sridevi, Melbourne. Fonts: Playfair Display, Cormorant Garamond, Newsreader and JetBrains Mono, all under the SIL Open Font License.</p></div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
