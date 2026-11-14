@@ -125,7 +125,7 @@
     <div>
       <div class="panel black">
         <table>
-          <caption>All 8 leads from real run 2, scored against an AI-consultancy profile · results/real-run-2.csv</caption>
+          <caption>Real run 2: 8 real leads, 7 scored against an AI-consultancy profile and 1 sent to manual review because its site couldn't be fetched · results/real-run-2.csv</caption>
           <thead><tr><th scope="col">Company</th><th scope="col" class="num-col">Fit score /10</th></tr></thead>
           <tbody>
             <tr><td>Direct Couriers</td><td class="s num">9</td></tr>
@@ -152,23 +152,17 @@
     <h2 id="h-memes">A classifier for 20 persuasion techniques in meme text, misses included</h2>
     <div class="who"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>RMIT coursework, solo</div>
     <ul class="chips navy" aria-label="Built with"><li>PyTorch</li><li>Hugging Face Transformers</li><li>DistilBERT</li><li>scikit-learn</li></ul>
-    <div class="split">
-      <div>
-        <p>The model reads the text of a meme and predicts which of 20 persuasion techniques it uses. A second head marks where in the text each one appears.</p>
-        <h3>The decision that mattered</h3>
-        <p>Each technique gets its own sigmoid output and its own threshold, tuned on the dev set, because one meme can use several techniques at once. Before training I removed a record that appeared in both the training and test files.</p>
-      </div>
-      <div>
-        <h3 class="flush-top">What it got wrong</h3>
-        <p>On the full 200-text test set, macro-F1 is 0.16. The model over-predicts: it tagged Exaggeration/Minimisation on every test text. Six techniques have three or fewer test examples, so their scores swing on a single hit.</p>
-      </div>
-    </div>
+    <p>The model reads the text of a meme and predicts which of 20 persuasion techniques it uses. A second head marks where in the text each one appears.</p>
+    <h3>The decision that mattered</h3>
+    <p>Each technique gets its own sigmoid output and its own threshold, tuned on the dev set, because one meme can use several techniques at once. Before training I removed a record that appeared in both the training and test files.</p>
     <div class="stats">
       <div><div class="v num">0.27 vs 0.21</div><div class="d">Dev macro-F1, full fine-tuning vs a frozen encoder</div><div class="src"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>Coursework notebook, section 8</div></div>
       <div><div class="v num">0.13 vs 0.05</div><div class="d">Macro-F1 against zero-shot Qwen2.5-1.5B on the same 60 test examples</div><div class="src"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>Coursework notebook, section 13</div></div>
       <div><div class="v num">950</div><div class="d">Texts: 687 train, 63 dev, 200 test</div><div class="src"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>Coursework notebook, section 2</div></div>
       <div><div class="v num">8.4 ms</div><div class="d">p95 latency per text on a Tesla T4</div><div class="src"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>Coursework notebook, section 16</div></div>
     </div>
+    <h3>What it got wrong</h3>
+    <p>On the full 200-text test set, macro-F1 is 0.16. The model over-predicts: it tagged Exaggeration/Minimisation on every test text. Six techniques have three or fewer test examples, so their scores swing on a single hit.</p>
     <div class="charts">
       <figure class="panel navy"><a href="assets/img/meme-label-frequency.webp" aria-label="Open the label-frequency chart full size"><img src="assets/img/meme-label-frequency.webp" width="990" height="690" loading="lazy" decoding="async" alt="Bar chart of how many training examples contain each technique. Loaded Language has about 360, while the rarest techniques have fewer than 10." data-fallback="The label-frequency chart didn't load."></a><figcaption>Training labels are heavily imbalanced, which is why each technique gets its own threshold.</figcaption></figure>
       <figure class="panel navy"><a href="assets/img/meme-zero-shot.webp" aria-label="Open the zero-shot comparison chart full size"><img src="assets/img/meme-zero-shot.webp" width="690" height="362" loading="lazy" decoding="async" alt="Bar chart: the trained model scores about 0.13 macro-F1 and the zero-shot model about 0.05 on the same test subset." data-fallback="The zero-shot comparison chart didn't load."></a><figcaption>Trained model vs zero-shot Qwen2.5-1.5B on the same 60 test examples. 20 of the zero-shot model's 60 answers were invalid and counted as empty.</figcaption></figure>
@@ -248,11 +242,12 @@
       <p>A web chatbot for emotional wellbeing. It retrieves its answers from a curated health PDF, so it stays inside material the team chose.</p>
       <h3>What we built</h3>
       <p>A React front end on Vercel and an Express API on Render. The bot replies in English, Tanglish or Hinglish to match the user, suggests relaxation activities when a message reads as negative, and takes voice input.</p>
-      <div class="linkrow"><a class="tlink" href="https://healthify-bot-rag.vercel.app">Open the live app</a><a class="tlink" href="https://github.com/Guardainsan/Healthify">Healthify on GitHub</a></div>
+      <p class="note">The live app's back end is offline for now, so the chat can't answer until it's back up.</p>
+      <div class="linkrow"><a class="tlink" href="https://github.com/Guardainsan/Healthify">Healthify on GitHub</a></div>
     </div>
     <figure>
-      <img class="shot" src="assets/img/healthify-chat-960.webp" srcset="assets/img/healthify-chat-960.webp 960w, assets/img/healthify-chat.webp 1536w" sizes="(max-width:980px) 100vw, 560px" width="960" height="384" loading="lazy" decoding="async" alt="Healthify's chat screen with four suggested starter questions and a message box with voice input" data-fallback="The Healthify screenshot didn't load. The live app is linked on the left.">
-      <figcaption>The live chat page at healthify-bot-rag.vercel.app.</figcaption>
+      <img class="shot" src="assets/img/healthify-chat-960.webp" srcset="assets/img/healthify-chat-960.webp 960w, assets/img/healthify-chat.webp 1536w" sizes="(max-width:980px) 100vw, 560px" width="960" height="384" loading="lazy" decoding="async" alt="Healthify's chat screen with four suggested starter questions and a message box with voice input" data-fallback="The Healthify screenshot didn't load. The code is on GitHub.">
+      <figcaption>The chat page of the deployed app.</figcaption>
     </figure>
   </div>
 </section>
@@ -325,7 +320,7 @@
 <section class="band navy on-navy sec contact" id="contact" aria-labelledby="h-contact">
   <div class="wrap">
     <h2 id="h-contact">Hiring an AI/ML intern in Melbourne?</h2>
-    <p>I'm on a student visa (subclass 500), so I can work 48 hours a fortnight during semester and full-time in the breaks. Email is the quickest way to reach me.</p>
+    <p>Available 24 hours a week during semester and full-time during breaks. Email is the quickest way to reach me.</p>
     <div class="actions">
       <a class="btn glitter-fill" href="Sudharsan_Resume.pdf" download><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>Download resume</a>
     <div class="links">
